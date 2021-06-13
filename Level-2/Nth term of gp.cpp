@@ -1,5 +1,9 @@
-// CPP Program to find nth term of
-// geometric progression
+To find the Nth term in the Geometric Progression series we use the simple formula . 
+ 
+T(N) = a1 * r^(N-1)
+t(5) = a1*r^(4);
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -36,3 +40,16 @@ int main()
 
 	return 0;
 }
+
+
+
+
+int Nth_of_GP(int a, int r, int N)
+{
+    // using formula to find
+    // the Nth term
+    // TN = a1 * r(N-1)
+    return( a * (int)(pow(r, N - 1)) );
+     
+}
+ 
